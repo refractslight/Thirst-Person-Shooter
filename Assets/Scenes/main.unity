@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 927339663}
   - component: {fileID: 927339666}
   m_Layer: 0
-  m_Name: IMG_0100_0
+  m_Name: face
   m_TagString: Face
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
   - {fileID: 9092331841696226914, guid: ee79d477ecbddff49bae0b11d477bfc9, type: 3}
   - {fileID: 8242694930447733626, guid: f66daba99ae67b047888feaab298f4d0, type: 3}
   - {fileID: 8720815104562071133, guid: edfeb08b198f0eb408e4e3c0537c363c, type: 3}
-  - {fileID: 2460066709488091236, guid: 3935de2fd1c358f48a843e44b0e8a4cf, type: 3}
+  - {fileID: 2038568336649447819, guid: 904f30af1e9adcb48ba1958d45b02a83, type: 3}
   - {fileID: 5502271934234412387, guid: 5676472be46c13e439c708b02fe539cc, type: 3}
   - {fileID: 7660791045235028050, guid: 1a3c656be024f064ca387512815eb90e, type: 3}
 --- !u!212 &927339664
@@ -276,8 +276,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1644750479
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1906450016196274852, guid: afef4b70a0762144b9e67d4f9235aba9,
     type: 3}
@@ -318,7 +318,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.078974545, y: -0.23692405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -329,7 +329,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.680616, y: 3.81}
+  m_Size: {x: 0.81681335, y: 0.8089626}
   m_EdgeRadius: 0
 --- !u!1 &1687623804
 GameObject:
@@ -390,7 +390,7 @@ MonoBehaviour:
   - {fileID: 2025409990983180619, guid: 677e8c369fba6f34e9961d5c98242a6d, type: 3}
   - {fileID: 8349405617354559185, guid: 7d5d3a8d77eb48f4bb5ee5c787ca6d20, type: 3}
   offset: {fileID: 1687623804}
-  deathTime: 1
+  deathTime: 0.75
 --- !u!4 &2101660711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8773608347787867493, guid: 9838eecef631cd74792f1354f5d7d4e5,

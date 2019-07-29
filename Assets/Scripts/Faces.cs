@@ -9,7 +9,8 @@ public class Faces : MonoBehaviour
     Shoot shooter;
     Drinks desiredSpray;
     public GameObject[] speechBubble;
-
+    GameObject currentSpeech;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,9 @@ public class Faces : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        Debug.Log("collision");
 
-
-        if (shooter.SodaType == desiredSpray)
+        if (desiredSpray == shooter.SodaType)
         {
             Debug.Log("yay!");
         }
@@ -44,7 +45,6 @@ public class Faces : MonoBehaviour
 
     void Speech(Drinks desiredSpray)
     {
-        GameObject currentSpeech;
 
         for (int i = 0; i < shooter.sprays.Length; i++)
         {
