@@ -7,6 +7,7 @@ public class Faces : MonoBehaviour
 
     public GameObject face;
     Shoot shooter;
+    SpeechBubbles speech;
     Drinks desiredSpray;
     public GameObject[] speechBubble;
     GameObject currentSpeech;
@@ -18,7 +19,7 @@ public class Faces : MonoBehaviour
         desiredSpray = (Drinks)Random.Range(0, 6);
         Debug.Log("I want " + desiredSpray);
         //Pass drink into Speech function to actually instantiate it
-        Speech(desiredSpray);
+        speech.Speech(desiredSpray);
 
     }
 
@@ -43,19 +44,5 @@ public class Faces : MonoBehaviour
 
     }
 
-    void Speech(Drinks desiredSpray)
-    {
-
-        for (int i = 0; i < shooter.sprays.Length; i++)
-        {
-            if (i == (int)desiredSpray)
-            {
-
-                currentSpeech = GameObject.Instantiate(speechBubble[i], transform.position, transform.rotation);
-
-            }
-        }
-
-
-    }
+   
 }

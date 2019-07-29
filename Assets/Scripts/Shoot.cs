@@ -33,7 +33,6 @@ public class Shoot : MonoBehaviour
             //Debug.Log("Soda");
             Spray(Drinks.Soda);
 
-
         }
 
         if (Input.GetKeyDown(KeyCode.W))
@@ -66,9 +65,6 @@ public class Shoot : MonoBehaviour
             Spray(Drinks.Water);
             // Debug.Log("Water");
         }
-
-
-
 
     }
 
