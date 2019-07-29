@@ -82,6 +82,8 @@ public class Shoot : MonoBehaviour
             // if the art asset is the same as the drink type, instantiate
             if (i == (int)type)
             {
+                //creates sprays
+                //flips sprays depending on where the gun is when its sprayed
                 if (gun.transform.position.x < 0)
                 {
                     currentSp = GameObject.Instantiate(sprays[i], new Vector3(offset.transform.position.x, offset.transform.position.y, offset.transform.position.z), transform.rotation * Quaternion.Euler(0f, 0f, sprayRotate));
