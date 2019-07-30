@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour
     public GameObject[] sprays;
     public GameObject offset;
     public float deathTime;
-
+    public GameObject offsetReverse;
     // Start is called before the first frame update
     void Start()
     {
@@ -90,7 +90,7 @@ public class Shoot : MonoBehaviour
                 else
                 {
 
-                    currentSp = GameObject.Instantiate(sprays[i], new Vector3(offset.transform.position.x, offset.transform.position.y, offset.transform.position.z), transform.rotation * Quaternion.Euler(0f, 0f, -sprayRotate));
+                    currentSp = GameObject.Instantiate(sprays[i], new Vector3(offsetReverse.transform.position.x, offsetReverse.transform.position.y, offsetReverse.transform.position.z), transform.rotation * Quaternion.Euler(0f, 0f, -sprayRotate));
                     currentSp.transform.SetParent(offset.transform);
                     Debug.Log("Made Reverse " + type);
                     Destroy(currentSp, deathTime);

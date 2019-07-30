@@ -42,7 +42,7 @@ public class GunController : MonoBehaviour
         else
         {
             sodaSprite.flipX = true;
-            shooter.offset.transform.rotation = Quaternion.Euler(0, -180f, 0);
+            //shooter.offset.transform.rotation = Quaternion.Euler(0, -180f, 0);
         } 
         
     }
