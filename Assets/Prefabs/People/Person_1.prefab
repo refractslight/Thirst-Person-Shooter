@@ -181,6 +181,7 @@ MonoBehaviour:
   speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
   yuck: {fileID: 2254695100290134169}
   yum: {fileID: 5466597790077926905}
+  thanks: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613, type: 3}
 --- !u!61 &489552190264220087
 BoxCollider2D:
   m_ObjectHideFlags: 0
