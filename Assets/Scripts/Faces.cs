@@ -14,10 +14,11 @@ public class Faces : MonoBehaviour
     
     public GameObject yuck;
     public GameObject yum;
-    
+    SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
     {
+        
         speech.GetComponent<SpeechBubbles>();
         shooter.GetComponent<Shoot>();
         //Create desired drink
@@ -41,11 +42,17 @@ public class Faces : MonoBehaviour
         if (desiredSpray == shooter.SodaType)
         {
             Debug.Log("yay!");
+            yum.SetActive(true);
+            yuck.SetActive(false);
+           face.gameObject.GetComponent<SpriteRenderer>().enabled = false; 
 
         }
         else
         {
             Debug.Log("boo!");
+            yuck.SetActive(true);
+            yum.SetActive(false);
+            face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
 
     }

@@ -255,7 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e79756c489fbee44aa9bc7f13b2f896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  face: {fileID: 0}
-  speechBubble: []
+  face: {fileID: 8212966685653331340}
+  shooter: {fileID: 6361103269514982641, guid: 66eca1d3d3dbaac41b8b77763d6a6ce9, type: 3}
+  speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
   yuck: {fileID: 8003562511212089564}
   yum: {fileID: 5673283584972130566}

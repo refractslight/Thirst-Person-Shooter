@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7745963392672512271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7745963392672512265}
+  - component: {fileID: 7745963392672512264}
+  m_Layer: 0
+  m_Name: SpeechBubbleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7745963392672512265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745963392672512271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45312846, y: 0.6728172, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7745963392672512264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745963392672512271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4294c491d42cba4b869082fe129bdb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speechBubble:
+  - {fileID: 9092331841696226914, guid: ee79d477ecbddff49bae0b11d477bfc9, type: 3}
+  - {fileID: 8242694930447733626, guid: f66daba99ae67b047888feaab298f4d0, type: 3}
+  - {fileID: 8720815104562071133, guid: edfeb08b198f0eb408e4e3c0537c363c, type: 3}
+  - {fileID: 2038568336649447819, guid: 904f30af1e9adcb48ba1958d45b02a83, type: 3}
+  - {fileID: 5502271934234412387, guid: 5676472be46c13e439c708b02fe539cc, type: 3}
+  - {fileID: 7660791045235028050, guid: 1a3c656be024f064ca387512815eb90e, type: 3}
+  shooter: {fileID: 6361103269514982641, guid: 66eca1d3d3dbaac41b8b77763d6a6ce9, type: 3}
+  currentSpeech: {fileID: 0}
+  startPos: 3.4

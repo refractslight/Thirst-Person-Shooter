@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   face: {fileID: 2995223977221855864}
-  speechBubble: []
+  shooter: {fileID: 6361103269514982641, guid: 66eca1d3d3dbaac41b8b77763d6a6ce9, type: 3}
+  speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
   yuck: {fileID: 7939635999818113258}
   yum: {fileID: 8933066252793795843}
 --- !u!61 &383168774925920219
