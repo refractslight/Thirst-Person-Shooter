@@ -6,15 +6,20 @@ public class Faces : MonoBehaviour
 {
 
     public GameObject face;
-    Shoot shooter;
-    SpeechBubbles speech;
+    public Shoot shooter;
+    public SpeechBubbles speech;
     Drinks desiredSpray;
-    public GameObject[] speechBubble;
+    //public GameObject[] speechBubble;
     GameObject currentSpeech;
+    
+    public GameObject yuck;
+    public GameObject yum;
     
     // Start is called before the first frame update
     void Start()
     {
+        speech.GetComponent<SpeechBubbles>();
+        shooter.GetComponent<Shoot>();
         //Create desired drink
         desiredSpray = (Drinks)Random.Range(0, 6);
         Debug.Log("I want " + desiredSpray);
@@ -36,6 +41,7 @@ public class Faces : MonoBehaviour
         if (desiredSpray == shooter.SodaType)
         {
             Debug.Log("yay!");
+
         }
         else
         {

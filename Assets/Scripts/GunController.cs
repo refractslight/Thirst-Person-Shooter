@@ -18,6 +18,7 @@ public class GunController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
         sodaSprite = GetComponent<SpriteRenderer>();
         //mousePosY = Mathf.Clamp(yStart, yMin, yMax);
         
