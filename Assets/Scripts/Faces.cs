@@ -28,6 +28,7 @@ public class Faces : MonoBehaviour
         Debug.Log("I want " + desiredSpray);
         //Pass drink into Speech function to actually instantiate it
         speech.Speech(desiredSpray);
+        //speech.currentSpeech.transform.position = Vector3.MoveTowards(transform.position, face.transform.position, 1.5f);
 
     }
 

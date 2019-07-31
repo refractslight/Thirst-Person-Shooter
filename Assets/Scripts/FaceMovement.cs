@@ -7,23 +7,37 @@ public class FaceMovement : MonoBehaviour
 
 
     public GameObject face;
+    public float xPos;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-      MoveFace();      
+        MoveFace();
     }
 
-    public void MoveFace(){
-      if(face.transform.position.x > 0){
-        
-      }  
+    public void MoveFace()
+    {
+
+        xPos = face.transform.position.x;
+        if (face.transform.position.x >= 0)
+        {
+            xPos -=(Random.Range(.02f, 1));
+            face.transform.Translate(xPos, 0, 0);
+            if(face.transform.position.x > 11.0f){
+                Destroy(gameObject);
+            }
+            //Debug.Log("movement");
+        }
+
+        else{
+            xPos += 1;
+        }
     }
 
 }

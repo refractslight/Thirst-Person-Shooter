@@ -21,6 +21,7 @@ public class SpeechBubbles : MonoBehaviour
         
     }
 
+// instantiate speech bubble with order
     public void Speech(Drinks desiredSpray)
     {
 
@@ -30,6 +31,7 @@ public class SpeechBubbles : MonoBehaviour
             {
 
                 currentSpeech = GameObject.Instantiate(speechBubble[i], new Vector3(transform.position.x + startPos, transform.position.y, transform.position.z), transform.rotation);
+                
 
             }
         }
