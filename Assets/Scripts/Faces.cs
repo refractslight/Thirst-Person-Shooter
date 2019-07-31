@@ -9,13 +9,13 @@ public class Faces : MonoBehaviour
     public Shoot shooter;
     public SpeechBubbles speech;
     Drinks desiredSpray;
-    //public GameObject[] speechBubble;
     GameObject currentSpeech;
 
     public GameObject yuck;
     public GameObject yum;
     SpriteRenderer sr;
     public GameObject thanks;
+    public Points points;
     
     // Start is called before the first frame update
     void Start()
@@ -39,23 +39,30 @@ public class Faces : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("collision");
 
         if (desiredSpray == shooter.SodaType)
         {
+            //Reward player for correct drink
             Debug.Log("yay!");
+            //change faces to reward
             yum.SetActive(true);
             yuck.SetActive(false);
+            //disables the parent sprite
             face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            //Create Thanks bubble
             GameObject.Instantiate(thanks, speech.currentSpeech.transform.position, speech.currentSpeech.transform.rotation);
             speech.currentSpeech.SetActive(false);
+            points.AddPoint();
+            
             
         }
         else
         {
+            //Changes face to "yuck"
             Debug.Log("boo!");
             yuck.SetActive(true);
             yum.SetActive(false);
+            //disables the parent sprite
             face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
 

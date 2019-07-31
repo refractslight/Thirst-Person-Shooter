@@ -32,7 +32,6 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             SodaType = Drinks.Soda;
-            //Debug.Log("Soda");
             Spray(Drinks.Soda);
 
         }
@@ -40,32 +39,31 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             SodaType = Drinks.Orange;
-            //Debug.Log("Orange");
             Spray(Drinks.Orange);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             SodaType = Drinks.Lime;
             Spray(Drinks.Lime);
-            //Debug.Log("Lime");
+
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             SodaType = Drinks.Pink;
             Spray(Drinks.Pink);
-            // Debug.Log("Pink");
+            
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
             SodaType = Drinks.Lemonade;
             Spray(Drinks.Lemonade);
-            // Debug.Log("Lemonade");
+            
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
             SodaType = Drinks.Water;
             Spray(Drinks.Water);
-            // Debug.Log("Water");
+            
         }
 
     }
