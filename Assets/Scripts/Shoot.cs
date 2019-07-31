@@ -14,6 +14,8 @@ public class Shoot : MonoBehaviour
     public GameObject offset;
     public float deathTime;
     public GameObject offsetReverse;
+    public AudioClip[] spray;
+    public AudioSource sprayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -84,6 +86,7 @@ public class Shoot : MonoBehaviour
                 {
                     currentSp = GameObject.Instantiate(sprays[i], new Vector3(offset.transform.position.x, offset.transform.position.y, offset.transform.position.z), transform.rotation * Quaternion.Euler(0f, 0f, sprayRotate));
                     currentSp.transform.SetParent(offset.transform);
+                    sprayer.PlayOneShot(spray[Random.Range(0, spray.Length)]);
                     Debug.Log("Made " + type);
                     Destroy(currentSp, deathTime);
                 }
@@ -92,6 +95,7 @@ public class Shoot : MonoBehaviour
 
                     currentSp = GameObject.Instantiate(sprays[i], new Vector3(offsetReverse.transform.position.x, offsetReverse.transform.position.y, offsetReverse.transform.position.z), transform.rotation * Quaternion.Euler(0f, 0f, -sprayRotate));
                     currentSp.transform.SetParent(offset.transform);
+                    sprayer.PlayOneShot(spray[Random.Range(0, spray.Length)]);
                     Debug.Log("Made Reverse " + type);
                     Destroy(currentSp, deathTime);
                 }

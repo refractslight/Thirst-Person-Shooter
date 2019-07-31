@@ -65,8 +65,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1644750479
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1472618448293967257, guid: a64c8070851ebfd49bfb390584f3cee7,
     type: 3}
@@ -145,8 +145,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1644750479
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6965457992097021343, guid: a64c8070851ebfd49bfb390584f3cee7,
     type: 3}
@@ -228,8 +228,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1644750479
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -4175139436315939331, guid: a64c8070851ebfd49bfb390584f3cee7,
     type: 3}
@@ -260,3 +260,4 @@ MonoBehaviour:
   speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
   yuck: {fileID: 8003562511212089564}
   yum: {fileID: 5673283584972130566}
+  thanks: {fileID: 0}
