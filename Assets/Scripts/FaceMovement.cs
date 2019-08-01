@@ -8,7 +8,7 @@ public class FaceMovement : MonoBehaviour
 
     public GameObject face;
     public float xPos;
-    
+    public SpawnFaces spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class FaceMovement : MonoBehaviour
     {
 
         xPos = face.transform.position.x;
-        if (face.transform.position.x >= 0)
+        if (face.transform.position.x == spawn.spawnLeft.transform.position.x)
         {
             xPos -=(Random.Range(.02f, .5f));
             face.transform.Translate(Time.deltaTime * xPos, 0, 0);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnFaces : MonoBehaviour
 {
@@ -12,10 +13,12 @@ public class SpawnFaces : MonoBehaviour
     public float timeBetweenSpawn = 5.5f;
     public int pos;
     public float counter = 5.5f;
+    public int faces;
+    public Points pointsScript;
     // Start is called before the first frame update
     void Start()
     {
-
+        faces = Random.Range(6, 13);
 
     }
 
@@ -28,10 +31,19 @@ public class SpawnFaces : MonoBehaviour
         if (counter < 0)
         {
             CreateFace();
-            Debug.Log("face Made");
             counter = Random.Range(1, timeBetweenSpawn);
+            faces -= 1;
+            Debug.Log(faces);
+
         }
-        
+        if (faces < 0)
+        {
+            //pointsScript.FinalPoints(pointsScript.score);
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            
+        }
+
+
 
     }
 
