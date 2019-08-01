@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public GameObject credits;
+    public GameObject backButton;
+    public GameObject creditsButton;
+    public GameObject startButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,18 @@ public class MenuManager : MonoBehaviour
 
     public void Credits()
     {
+        creditsButton.gameObject.SetActive(false);
         credits.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
+        startButton.gameObject.SetActive(false);
+
+    }
+
+    public void Back(){
+        creditsButton.gameObject.SetActive(true);
+        credits.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(false);
+        startButton.gameObject.SetActive(true);
+
     }
 }

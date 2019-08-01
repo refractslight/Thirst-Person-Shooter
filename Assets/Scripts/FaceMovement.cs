@@ -27,8 +27,8 @@ public class FaceMovement : MonoBehaviour
         xPos = face.transform.position.x;
         if (face.transform.position.x >= 0)
         {
-            xPos -=(Random.Range(.02f, 1));
-            face.transform.Translate(xPos, 0, 0);
+            xPos -=(Random.Range(.02f, .5f));
+            face.transform.Translate(Time.deltaTime * xPos, 0, 0);
             if(face.transform.position.x > 11.0f){
                 Destroy(gameObject);
             }
@@ -36,7 +36,11 @@ public class FaceMovement : MonoBehaviour
         }
 
         else{
-            xPos += 1;
+            xPos += (Random.Range(.02f, 1));
+            face.transform.Translate(xPos, 0, 0);
+            if(face.transform.position.x < -11.0f){
+                Destroy(gameObject);
+            }
         }
     }
 
