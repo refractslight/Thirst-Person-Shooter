@@ -16,7 +16,8 @@ public class Faces : MonoBehaviour
     SpriteRenderer sr;
     public GameObject thanks;
     public Points points;
-    
+    public bool isShot = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,31 +42,41 @@ public class Faces : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
 
-        if (desiredSpray == shooter.SodaType)
+        if (isShot == true)
         {
-            //Reward player for correct drink
-            Debug.Log("yay!");
-            //change faces to reward
-            yum.SetActive(true);
-            yuck.SetActive(false);
-            //disables the parent sprite
-            face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            //Create Thanks bubble
-            GameObject.Instantiate(thanks, speech.currentSpeech.transform.position, speech.currentSpeech.transform.rotation);
-            speech.currentSpeech.SetActive(false);
-            points.AddPoint();
-            
-            
+            return;
         }
         else
         {
-            //Changes face to "yuck"
-            Debug.Log("boo!");
-            yuck.SetActive(true);
-            yum.SetActive(false);
-            //disables the parent sprite
-            face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            if (desiredSpray == shooter.SodaType)
+            {
+                //Reward player for correct drink
+                Debug.Log("yay!");
+                //change faces to reward
+                yum.SetActive(true);
+                yuck.SetActive(false);
+                //disables the parent sprite
+                face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                //Create Thanks bubble
+                GameObject.Instantiate(thanks, speech.currentSpeech.transform.position, speech.currentSpeech.transform.rotation);
+                speech.currentSpeech.SetActive(false);
+                points.AddPoint();
+                isShot = true;
+
+
+
+            }
+            else
+            {
+                //Changes face to "yuck"
+                Debug.Log("boo!");
+                yuck.SetActive(true);
+                yum.SetActive(false);
+                //disables the parent sprite
+                face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
+
 
     }
 
