@@ -17,6 +17,7 @@ public class Faces : MonoBehaviour
     public GameObject thanks;
     public Points points;
     public bool isShot = false;
+    public GameObject thanksBubble;
 
     // Start is called before the first frame update
     void Start()
@@ -29,14 +30,13 @@ public class Faces : MonoBehaviour
         Debug.Log("I want " + desiredSpray);
         //Pass drink into Speech function to actually instantiate it
         speech.Speech(desiredSpray);
-        //speech.currentSpeech.transform.position = Vector3.MoveTowards(transform.position, face.transform.position, 1.5f);
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -58,13 +58,11 @@ public class Faces : MonoBehaviour
                 //disables the parent sprite
                 face.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 //Create Thanks bubble
-                GameObject.Instantiate(thanks, speech.currentSpeech.transform.position, speech.currentSpeech.transform.rotation);
+                thanksBubble = GameObject.Instantiate(thanks, speech.currentSpeech.transform.position, speech.currentSpeech.transform.rotation);
+                thanksBubble.transform.parent = face.transform;
                 speech.currentSpeech.SetActive(false);
                 points.AddPoint();
                 isShot = true;
-
-
-
             }
             else
             {

@@ -9,6 +9,7 @@ public class SpeechBubbles : MonoBehaviour
     public Shoot shooter;
     public GameObject currentSpeech;
     public float startPos;
+    public Faces face;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class SpeechBubbles : MonoBehaviour
             {
 
                 currentSpeech = GameObject.Instantiate(speechBubble[i], new Vector3(transform.position.x + startPos, transform.position.y, transform.position.z), transform.rotation);
-                
+                currentSpeech.transform.parent = face.transform;
 
             }
         }
