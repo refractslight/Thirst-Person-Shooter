@@ -181,7 +181,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d9ab861244abf314b8a66d60618621b4, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.487
   m_Pitch: 1
   Loop: 1
@@ -955,7 +955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: 
   number: {fileID: 906154236}
-  final: {fileID: 0}
   pointsString: 
   score: 0
 --- !u!222 &1062465107
