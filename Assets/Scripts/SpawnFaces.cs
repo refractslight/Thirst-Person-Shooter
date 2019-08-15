@@ -14,7 +14,7 @@ public class SpawnFaces : MonoBehaviour
     public int pos;
     public float counter = 5.5f;
     public int faces;
-    public Points pointsScript;
+    //public Points pointsScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,8 +39,8 @@ public class SpawnFaces : MonoBehaviour
         if (faces < 0)
         {
             //pointsScript.FinalPoints(pointsScript.score);
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
-            
+            //SceneManager.LoadScene(2, LoadSceneMode.Single);
+            return;
         }
 
 

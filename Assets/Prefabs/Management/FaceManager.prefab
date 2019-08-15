@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2601178051036536450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2601178051036536449}
+  - component: {fileID: 2601178051036536448}
+  m_Layer: 0
+  m_Name: FaceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2601178051036536449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2601178051036536450}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.832314, y: -0.3510394, z: -1.6396111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2601178051036536448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2601178051036536450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2d7213d6b75b847947e6d26ca192dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnLeft: {fileID: 8385976537322464734, guid: 7aec895ca9fa047418d77739630be771,
+    type: 3}
+  spawnRight: {fileID: 5707570074578752309, guid: a884bd213c6157a4495a7ff35911a8f6,
+    type: 3}
+  people:
+  - {fileID: 4221402110642575974, guid: e669e10a6a4efdd43a402b04492b8326, type: 3}
+  - {fileID: 2995223977221855864, guid: 690c9eb1570d63644b983952bf7889c8, type: 3}
+  - {fileID: 3849294217912952706, guid: 5be4bf392bce0f8408d4c160e387b1f9, type: 3}
+  - {fileID: 9068448325875572410, guid: 0178b0e416174254995a72825cd785a3, type: 3}
+  - {fileID: 7653353583965488573, guid: 5aabf073c45b03f4290bc6f16de4887d, type: 3}
+  - {fileID: 4609702122081109499, guid: af1b7686085f0d84d833a935191911cc, type: 3}
+  - {fileID: 3872064236507853897, guid: ccc8a1c1b58ec84458ff76295e799c85, type: 3}
+  - {fileID: 8212966685653331340, guid: 5c6a60e866783d048bf5578abc8bf4ef, type: 3}
+  - {fileID: 5090967499804501499, guid: d31d32ca5e8180d44878cb4f523be4d8, type: 3}
+  person: {fileID: 0}
+  timeBetweenSpawn: 2
+  pos: 0
+  counter: 0
+  faces: 0

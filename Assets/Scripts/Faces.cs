@@ -9,11 +9,10 @@ public class Faces : MonoBehaviour
     public Shoot shooter;
     public SpeechBubbles speech;
     Drinks desiredSpray;
-    GameObject currentSpeech;
+    //GameObject currentSpeech;
 
     public GameObject yuck;
     public GameObject yum;
-    SpriteRenderer sr;
     public GameObject thanks;
     public Points points;
     public bool isShot = false;
@@ -29,7 +28,7 @@ public class Faces : MonoBehaviour
         desiredSpray = (Drinks)Random.Range(0, 6);
         Debug.Log("I want " + desiredSpray);
         //Pass drink into Speech function to actually instantiate it
-        speech.Speech(desiredSpray);
+        speech.Speech(desiredSpray, face);
        
     }
 

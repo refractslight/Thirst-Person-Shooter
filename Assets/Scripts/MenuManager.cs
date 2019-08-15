@@ -9,16 +9,18 @@ public class MenuManager : MonoBehaviour
     public GameObject backButton;
     public GameObject creditsButton;
     public GameObject startButton;
+    public GameObject howToPlay;
+    public GameObject howToButton;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void BeginGame()
@@ -35,11 +37,23 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void Back(){
+    public void Back()
+    {
         creditsButton.gameObject.SetActive(true);
         credits.gameObject.SetActive(false);
         backButton.gameObject.SetActive(false);
         startButton.gameObject.SetActive(true);
+        howToPlay.gameObject.SetActive(false);
+        howToButton.gameObject.SetActive(true);
 
+    }
+
+    public void HowTo()
+    {
+        creditsButton.gameObject.SetActive(false);
+        startButton.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(true);
+        howToPlay.gameObject.SetActive(true);
+        howToButton.gameObject.SetActive(false);
     }
 }
