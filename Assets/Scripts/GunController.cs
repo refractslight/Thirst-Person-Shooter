@@ -9,9 +9,9 @@ public class GunController : MonoBehaviour
     SpriteRenderer sodaSprite;
     public float depth = 10.0f;
     
-    private float yMin = 5.0f;
-    private float yMax = 1.95f;
-    private float yStart = 0.0f;
+    //private float yMin = 5.0f;
+    //private float yMax = 1.95f;
+    //private float yStart = 0.0f;
     private float mousePosY;
 
 
