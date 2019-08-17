@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5681766798060156254}
   - component: {fileID: 489552190264220087}
   - component: {fileID: 5829505344651399893}
-  - component: {fileID: -6308646781977286290}
+  - component: {fileID: -4533963081663116485}
   m_Layer: 0
   m_Name: Person_1
   m_TagString: Face
@@ -183,7 +183,6 @@ MonoBehaviour:
   speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
   yuck: {fileID: 2254695100290134169}
   yum: {fileID: 5466597790077926905}
-  thanks: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613, type: 3}
   points: {fileID: 0}
   isShot: 0
   thanksBubble: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613,
@@ -233,7 +232,7 @@ MonoBehaviour:
   endLeft: {fileID: 189256950249429530, guid: fb938879926cb284196f7a7d0c4ed5d1, type: 3}
   endRight: {fileID: 6353771273796736939, guid: aff0a8786041c2e41b9d9e2f103311e2,
     type: 3}
---- !u!114 &-6308646781977286290
+--- !u!114 &-4533963081663116485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

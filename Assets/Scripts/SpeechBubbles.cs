@@ -29,9 +29,9 @@ public class SpeechBubbles : MonoBehaviour
         {
             if (i == (int)desiredSpray)
             {
-                
                 currentSpeech = GameObject.Instantiate(speechBubble[i], new Vector3(transform.position.x + startPos, transform.position.y, transform.position.z), transform.rotation);
                 currentSpeech.transform.parent = face.transform;
+                Debug.Log("speech Bubble Made");
 
             }
         }
