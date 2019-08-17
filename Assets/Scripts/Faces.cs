@@ -19,7 +19,7 @@ public class Faces : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Assign SpeechBubbleManager in scene to this face. Finally.
+        //Assign SpeechBubbleManager that already exists in scene to this face. Finally.
         speechScript = GameObject.Find("SpeechBubbleManager").GetComponent<SpeechBubbles>();
         //speech.GetComponent<SpeechBubbles>();
         shooter.GetComponent<Shoot>();

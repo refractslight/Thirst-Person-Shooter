@@ -180,10 +180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   face: {fileID: 3849294217912952706}
   shooter: {fileID: 6361103269514982641, guid: 66eca1d3d3dbaac41b8b77763d6a6ce9, type: 3}
-  speech: {fileID: 7745963392672512264, guid: 6db8e8320d0f6774abb50038b8d539dc, type: 3}
+  speechScript: {fileID: 0}
   yuck: {fileID: 516852090580026612}
   yum: {fileID: 5455027785262799656}
-  thanks: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613, type: 3}
   points: {fileID: 0}
   isShot: 0
   thanksBubble: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613,
@@ -228,11 +227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   face: {fileID: 3849294217912952706}
-  xPos: 0
-  spawn: {fileID: 2601178051036536448, guid: 4719677a339351445ba071e00af37c5c, type: 3}
   endLeft: {fileID: 189256950249429530, guid: fb938879926cb284196f7a7d0c4ed5d1, type: 3}
   endRight: {fileID: 6353771273796736939, guid: aff0a8786041c2e41b9d9e2f103311e2,
     type: 3}
+  faceSpawn: {fileID: 0}
 --- !u!114 &5602489598250635583
 MonoBehaviour:
   m_ObjectHideFlags: 0

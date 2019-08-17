@@ -14,10 +14,12 @@ public class SpawnFaces : MonoBehaviour
     public int pos;
     public float counter = 5.5f;
     public int faces;
+    public FaceMovement movementScript;
     //public Points pointsScript;
     // Start is called before the first frame update
     void Start()
     {
+        
         faces = Random.Range(6, 13);
 
     }
@@ -57,14 +59,19 @@ public class SpawnFaces : MonoBehaviour
             if (pos == 0)
             {
 
-                Debug.Log(pos);
+                Debug.Log("Left");
                 person = GameObject.Instantiate(people[Random.Range(0, people.Length)], new Vector3(spawnLeft.transform.position.x, spawnLeft.transform.position.y, spawnLeft.transform.position.z), transform.rotation);
+                movementScript = person.GetComponent<FaceMovement>();
+                StartCoroutine(movementScript.moveRight(person));
+                
             }
             else
             {
 
-                Debug.Log(pos);
+                Debug.Log("Right");
                 person = GameObject.Instantiate(people[Random.Range(0, people.Length)], new Vector3(spawnRight.transform.position.x, spawnRight.transform.position.y, spawnRight.transform.position.z), transform.rotation);
+                movementScript = person.GetComponent<FaceMovement>();
+                StartCoroutine(movementScript.moveLeft(person));
             }
 
 

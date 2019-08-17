@@ -9,9 +9,6 @@ public class GunController : MonoBehaviour
     SpriteRenderer sodaSprite;
     public float depth = 10.0f;
     
-    //private float yMin = 5.0f;
-    //private float yMax = 1.95f;
-    //private float yStart = 0.0f;
     private float mousePosY;
 
 
@@ -31,7 +28,7 @@ public class GunController : MonoBehaviour
         GameObject  gun = shooter.gun;
 
         
-    //Makes the gun follow the cursor & constrain the height of the mouseY
+    //Makes the gun follow the cursor
         Vector3 mousePosition = Input.mousePosition;
         Vector3 gunPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, depth));
         gun.transform.position = gunPosition;
@@ -43,7 +40,6 @@ public class GunController : MonoBehaviour
         else
         {
             sodaSprite.flipX = true;
-            //shooter.offset.transform.rotation = Quaternion.Euler(0, -180f, 0);
         } 
         
     }
