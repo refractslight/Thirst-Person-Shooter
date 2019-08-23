@@ -6,16 +6,26 @@ using UnityEngine.SceneManagement;
 public class SpawnFaces : MonoBehaviour
 {
 
+// Where to spawn on the left side of the screen
     public GameObject spawnLeft;
+    //same, but right
     public GameObject spawnRight;
+    //array of face prefabs
     public GameObject[] people;
+    // the face we're actually dealing with
     public GameObject person;
+    //how long until the next face spawns
     public float timeBetweenSpawn = 5.5f;
+    //whether face is spawned on left (0), or right (1)
     public int pos;
+    //How much time before scenes change (REVISE THIS)
     public float counter = 5.5f;
+    //How many faces to spwan
     public int faces;
+    //the facemovement script
     public FaceMovement movementScript;
-    //public Points pointsScript;
+    
+
     // Start is called before the first frame update
     void Start()
     {

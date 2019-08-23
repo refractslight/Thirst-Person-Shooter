@@ -5,26 +5,30 @@ using UnityEngine;
 public class FaceMovement : MonoBehaviour
 {
 
-    public float speed = 0.5f;
-    public GameObject face;
+    // speed that face moves across screen
+    public float speed;
+
+    // public GameObject face;
+    // destroy point on left side of screen
     public GameObject endLeft;
+    //destroy point on right side of screen
     public GameObject endRight;
-    //public GameObject spawnLeft;
+
+    //Where the face spawns
     public SpawnFaces faceSpawn;
 
     // Start is called before the first frame update
-
     void Start()
     {
-        faceSpawn = GameObject.Find("FaceManager").GetComponent<SpawnFaces>();
+        //Find the face movement manager in the scene. Not sure if I actually need this.
+        //faceSpawn = GameObject.Find("FaceManager").GetComponent<SpawnFaces>();
+
+
+        //set the speed for the face to move
+        speed = Random.Range(1f, 3.0f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    //Coroutines that handle movement of faces.
     public IEnumerator moveLeft(GameObject moveMe)
     {
         Debug.Log("MoveLeft coroutine started");

@@ -7,25 +7,31 @@ public class Shoot : MonoBehaviour
 {
 
 
+    // where the spray will be coming from
     public GameObject gun;
-    public Drinks SodaType;
-    public float sprayRotate = -68.319f;
-    public GameObject[] sprays;
-    public GameObject offset;
-    public float deathTime;
-    public GameObject offsetReverse;
-    public AudioClip[] spray;
-    public AudioSource sprayer;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
+    //enum to store drink type
+    public Drinks SodaType;
+    //how to rotate the gameobject to look like it's really coming out of the spray gun
+    public float sprayRotate = -68.319f;
+    // Array of spray sprites
+    public GameObject[] sprays;
+    //offset between gun prefab and sprays
+    public GameObject offset;
+    //how long until the spray disappears
+    public float deathTime;
+    // offset between gun and prefab on opposite side of screen (when the gun flips)
+    public GameObject offsetReverse;
+    //array of audio for each spray
+    public AudioClip[] spray;
+    //audio source for spray noises
+    public AudioSource sprayer;
+
 
     // Update is called once per frame
     void Update()
     {
-
+        // makes gun follow mouse
         Vector3 mousePos = Input.mousePosition;
         //Input Controls
         // Sends type of drink to Spray function
@@ -51,19 +57,19 @@ public class Shoot : MonoBehaviour
         {
             SodaType = Drinks.Pink;
             Spray(Drinks.Pink);
-            
+
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
             SodaType = Drinks.Lemonade;
             Spray(Drinks.Lemonade);
-            
+
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
             SodaType = Drinks.Water;
             Spray(Drinks.Water);
-            
+
         }
 
     }
