@@ -58,7 +58,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 1644750479
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1816314757207638118
 MonoBehaviour:
@@ -269,6 +269,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThanksBubble
       objectReference: {fileID: 0}
+    - target: {fileID: 3122150079736083941, guid: 71438436c5941104683f9ce77277301d,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1644750479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122150079736083941, guid: 71438436c5941104683f9ce77277301d,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6452934683121938310, guid: 71438436c5941104683f9ce77277301d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,16 +333,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3122150079736083941, guid: 71438436c5941104683f9ce77277301d,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1644750479
-      objectReference: {fileID: 0}
-    - target: {fileID: 3122150079736083941, guid: 71438436c5941104683f9ce77277301d,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71438436c5941104683f9ce77277301d, type: 3}

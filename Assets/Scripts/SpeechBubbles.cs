@@ -13,17 +13,17 @@ public class SpeechBubbles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-// instantiate speech bubble with order
-    public void Speech(Drinks desiredSpray, GameObject face)
+    // instantiate speech bubble with order
+    public GameObject Speech(Drinks desiredSpray, GameObject face)
     {
         for (int i = 0; i < shooter.sprays.Length; i++)
         {
@@ -31,10 +31,11 @@ public class SpeechBubbles : MonoBehaviour
             {
                 currentSpeech = GameObject.Instantiate(speechBubble[i], new Vector3(face.transform.position.x + startPos, face.transform.position.y, face.transform.position.z), transform.rotation);
                 currentSpeech.transform.SetParent(face.transform);
-               
+                return currentSpeech;
+
             }
         }
-
+        return null;
 
     }
 

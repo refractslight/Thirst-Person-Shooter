@@ -8,7 +8,6 @@ public class FaceMovement : MonoBehaviour
     // speed that face moves across screen
     public float speed;
 
-    // public GameObject face;
     // destroy point on left side of screen
     public GameObject endLeft;
     //destroy point on right side of screen
@@ -20,12 +19,10 @@ public class FaceMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Find the face movement manager in the scene. Not sure if I actually need this.
-        //faceSpawn = GameObject.Find("FaceManager").GetComponent<SpawnFaces>();
 
 
         //set the speed for the face to move
-        speed = Random.Range(1f, 3.0f);
+        speed = Random.Range(2f, 3.5f);
     }
 
     //Coroutines that handle movement of faces.
