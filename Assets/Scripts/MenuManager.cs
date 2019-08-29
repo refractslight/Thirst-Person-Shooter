@@ -34,6 +34,7 @@ public class MenuManager : MonoBehaviour
         credits.gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
         startButton.gameObject.SetActive(false);
+        howToButton.gameObject.SetActive(false);
 
     }
 
@@ -56,4 +57,5 @@ public class MenuManager : MonoBehaviour
         howToPlay.gameObject.SetActive(true);
         howToButton.gameObject.SetActive(false);
     }
+
 }
