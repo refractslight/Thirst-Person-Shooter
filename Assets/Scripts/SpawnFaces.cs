@@ -51,8 +51,8 @@ public class SpawnFaces : MonoBehaviour
         if (faces < 0)
         {
             //pointsScript.FinalPoints(pointsScript.score);
-            //SceneManager.LoadScene(2, LoadSceneMode.Single);
-            return;
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            //return;
         }
 
 
