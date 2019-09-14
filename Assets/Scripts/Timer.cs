@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public float timeLeft;
@@ -23,5 +23,9 @@ public class Timer : MonoBehaviour
         int timeRound = (int)timeLeft;
         timeString = timeRound.ToString();
         timerText.SetText(timeString);
+        if (timeString == "0")
+        {
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
 }
