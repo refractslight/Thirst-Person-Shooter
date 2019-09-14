@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f298e2ba41ad47b915d3295f12875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 20
+  timeLeft: 60
   timeString: 
   timerText: {fileID: 1525307457}
 --- !u!1 &1565275656 stripped
