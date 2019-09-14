@@ -15,7 +15,7 @@ public class SpawnFaces : MonoBehaviour
     // the face we're actually dealing with
     public GameObject person;
     //how long until the next face spawns
-    public float timeBetweenSpawn = 5.5f;
+    public float timeBetweenSpawn;
     //whether face is spawned on left (0), or right (1)
     public int pos;
     //How much time before scenes change (REVISE THIS)
@@ -31,6 +31,8 @@ public class SpawnFaces : MonoBehaviour
     {
         
         faces = Random.Range(6, 13);
+        timeBetweenSpawn = Random.Range(1.5f, 5.5f);
+        
 
     }
 
