@@ -179,8 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shooter: {fileID: 6361103269514982641, guid: 66eca1d3d3dbaac41b8b77763d6a6ce9, type: 3}
   speechScript: {fileID: 0}
-  yuck: {fileID: 516852090580026612}
-  yum: {fileID: 5455027785262799656}
+  yuck: {fileID: 5455027785262799656}
+  yum: {fileID: 516852090580026612}
   points: {fileID: 0}
   isShot: 0
   thanksBubble: {fileID: 7938338670716745788, guid: fcd5fb17e22cf9141b2915128eb6d613,

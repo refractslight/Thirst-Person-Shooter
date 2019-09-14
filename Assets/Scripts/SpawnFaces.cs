@@ -48,12 +48,12 @@ public class SpawnFaces : MonoBehaviour
             Debug.Log(faces);
 
         }
-        if (faces < 0)
-        {
-            //pointsScript.FinalPoints(pointsScript.score);
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
-            //return;
-        }
+        // if (faces < 0)
+        // {
+        //     //pointsScript.FinalPoints(pointsScript.score);
+        //     SceneManager.LoadScene(2, LoadSceneMode.Single);
+        //     //return;
+        // }
 
 
 
