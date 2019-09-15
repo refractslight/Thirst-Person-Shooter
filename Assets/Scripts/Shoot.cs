@@ -53,19 +53,19 @@ public class Shoot : MonoBehaviour
             Spray(Drinks.Lime);
 
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             SodaType = Drinks.Pink;
             Spray(Drinks.Pink);
 
         }
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             SodaType = Drinks.Lemonade;
             Spray(Drinks.Lemonade);
 
         }
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             SodaType = Drinks.Water;
             Spray(Drinks.Water);
