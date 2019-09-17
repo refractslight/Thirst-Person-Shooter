@@ -5,6 +5,7 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public GameObject HUDObj;
+    public GameObject HUDObj2;
     public GameObject helpText;
     public bool isShowing;
     // Start is called before the first frame update
@@ -24,11 +25,13 @@ public class HUD : MonoBehaviour
         if (isShowing)
         {
             HUDObj.SetActive(true);
+            HUDObj2.SetActive(true);
             helpText.SetActive(false);
         }
         else{
             helpText.SetActive(true);
             HUDObj.SetActive(false);
+            HUDObj2.SetActive(false);
         }
     }
 }
