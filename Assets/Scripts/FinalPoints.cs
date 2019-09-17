@@ -20,7 +20,7 @@ public class FinalPoints : MonoBehaviour
     {
         scoreText = score.ToString();
         finalScore.SetText(scoreText);
-
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
